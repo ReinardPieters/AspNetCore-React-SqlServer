@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin", // You can name your policy
+    options.AddPolicy("AllowSpecificOrigin",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000") // Replace with your React app's URL
+            policy.WithOrigins("http://localhost:3000") // Replace your React app's URL
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         });
