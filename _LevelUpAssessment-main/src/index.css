@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Orbitron Regular";
+  src: local("Orbitron");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Orbitron Bold";
+  src: local("Orbitron");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Micro 5";
+  src: url("/public/assets/fonts/micro5/Micro5-Regular.ttf");
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+tbody .firstColumn {
+  padding: 8px !important;
+  border-left: 1px solid #E3F0D3 !important;
+  border-bottom: 1px solid #E3F0D3 !important;
+}
+
+tbody .contact {
+  padding: 8px !important;
+  border-bottom: 1px solid #E3F0D3 !important;
+}
+
+tbody .buttonRow {
+  display: flex !important;
+  gap: 10px !important;
+  padding: 8px !important;
+  border-right: 1px solid #E3F0D3 !important;
+  border-bottom: 1px solid #E3F0D3 !important;
+}

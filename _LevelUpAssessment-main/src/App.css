@@ -1,0 +1,185 @@
+:root {
+  --black: #080808;
+  --white: #E3F0D3;
+  --red: #ED2224;
+  --blue: #31ADE3;
+  --green: #71C389;
+  --orange: #F1A51F;
+}
+
+.orbitron-regular {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orbitron-bold {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.micro-5 {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--black);
+}
+.buttonRow{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.view{
+   background-color: rgb(0, 0, 0);
+   border: 1px solid #F1A51F;
+   color: #F1A51F;
+   border-radius: 20px;
+   padding: 5px;
+   width: 120px;
+   font-family: "Micro 5", sans-serif;
+   font-size: 20px;
+}
+.delete{
+    border-color:  #ED2224;
+    border:  1px solid #ED2224;
+    color: #ED2224;
+    background-color : black;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    font-family: "Micro 5", sans-serif;
+    font-size: 20px;
+}
+.fullname{
+  display: flex;
+  align-items: center;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.edit{
+    border-color: #71C389;
+    border:  1px solid #71C389;
+    color: #71C389;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    font-family: "Micro 5", sans-serif;
+    font-size: 20px;
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+}
+.logo img{
+  height: 60px;
+  margin: 60px;
+}
+.viewGrads{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color:var(--red);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: "Micro 5", sans-serif;
+}
+.cover{
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  height: 800px;
+}
+.left{
+  margin: 0 40px;
+}
+.left img{
+  height: 400px;
+}
+.viewGrads img{
+  height: 20px;
+}
+.bars{
+  margin: 100px 0px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.coverContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    position: static !important;
+    height: 400px !important;
+  }
+  
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .left {
+    margin: 0 20px;
+  }
+  
+  .bars {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .coverContainer {
+    align-self: flex-end;
+  }
+  .buttonRow {
+    flex-direction: column;
+  }
+  
+  #graduatesSection {
+    width: 95% !important;
+  }
+  
+  .dudeImage {
+    z-index: 0 !important;
+    opacity: 0.3;
+  }
+  
+  .view, .edit, .delete {
+    width: 100px;
+    font-size: 16px;
+  }
+  
+  tbody tr td > div {
+    height: 150px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

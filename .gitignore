@@ -1,0 +1,33 @@
+# ASP.NET Core
+bin/
+obj/
+*.user
+*.suo
+.vs/
+appsettings.Development.json
+*.csproj.user
+launchSettings.json
+
+# React
+node_modules/
+build/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db

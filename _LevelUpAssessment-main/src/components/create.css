@@ -1,0 +1,147 @@
+.formCreate{
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.inputContainer{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.inputContainer label{
+    color: #F1A51F;
+    font-family: "Micro 5", sans-serif;
+    font-size: 30px;
+}
+
+.inputContainer input{
+    background-color: #080808;
+    border: none;
+    border-bottom: 2px solid #E3F0D3;
+    color: #E3F0D3;
+    padding: 8px;
+    outline: none;
+    width: 90%;
+}
+
+.inputContainer input[type="text"][name="DateOfBirth"]{
+    width: auto;
+    max-width: 200px;
+}
+
+.inputContainer input::placeholder{
+    color: #E3F0D3;
+    opacity: 0.7;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.submit{
+    background-color: #ED2224;
+    color: #E3F0D3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    font-family: "Micro 5", sans-serif;
+    font-size: 30px;
+}
+.submit:hover{
+    background-color: #71C389 ;
+}
+.heading p{
+    font-size: 20px
+}
+.heading h1{
+    color: #E3F0D3;
+    font-size: 50px;
+}
+.headingContainer{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    padding: 20px;
+    margin: 40px 0;
+    align-items: center;
+}
+.heading{
+    min-width: 600px;
+}
+.picture{
+    width: 100%;
+}
+
+.picture img{
+    width: 100vw;
+    height:60px;
+    display: block;
+}
+
+.inputRow{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.buttonContainer{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .inputRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .buttonContainer {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .submit {
+        width: 200px;
+        font-size: 20px;
+        margin-left: 0;
+        align-self: center;
+    }
+    
+    .inputRow:last-child {
+        align-items: flex-start;
+    }
+    
+    .heading {
+        min-width: 200px;
+    }
+    
+    .heading h1 {
+        font-size: 30px;
+    }
+    
+    .heading p {
+        font-size: 14px;
+    }
+}
